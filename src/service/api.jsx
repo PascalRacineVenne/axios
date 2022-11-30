@@ -19,6 +19,7 @@ export const addPost = async (post) => {
 };
 
 export const updatePost = async (id, updatedPost) => {
+  console.log('before TRY');
   console.log(updatedPost);
   try {
     console.log('In try');

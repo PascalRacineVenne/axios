@@ -16,7 +16,7 @@ const EditPost = () => {
   });
   useEffect(() => {
     getPostData(postId.id);
-  }, [formData]);
+  }, []);
 
   const getPostData = async (id) => {
     const response = await getAllPosts(id);
@@ -32,7 +32,8 @@ const EditPost = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    updatePost(formData);
+    console.log(formData);
+    updatePost(postId.id, formData);
     setFormData({ title: '', body: '' });
     getAllPosts();
     navigate('/posts');
