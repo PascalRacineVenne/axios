@@ -33,9 +33,9 @@ export default function DenseTable() {
   };
 
   return (
-    <Container sx={{ margin: 5 }}>
+    <Container sx={{ margin: 2 }}>
       <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} size='small' aria-label='a dense table'>
+        <Table sx={{ minWidth: 600 }} size='small' aria-label='a dense table'>
           <TableHead>
             <TableRow>
               <TableCell>Title</TableCell>

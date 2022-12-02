@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const baseURL = 'https://jsonplaceholder.typicode.com/posts';
+// const baseURL = 'https://jsonplaceholder.typicode.com/posts';
+const baseURL = 'http://localhost:3000/posts';
 
 export const getAllPosts = async (id) => {
   id = id || '';

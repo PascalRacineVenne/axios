@@ -17,7 +17,6 @@ const Navbar = () => {
             textDecoration: 'none',
           }}
         >
-          {' '}
           React JS Crud
         </NavLink>
         <NavLink
